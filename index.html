@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Currency Exchanger</title>
+</head>
+<body>
+  <div class='container'>
+    <form id='exchange'>
+      <label for='money'>Enter the amount of money you would like to convert: </label>
+      <input id='money' class='form-control' type='number' placeholder='$$$' step ='.01' required>
+      <label>Now, enter the currency to which you'd like to convert your money: </label>
+      <select class='form-control' id='alternateCurrency' required>
+        <option value=''>Currency Options</option>
+        <option value='EUR'>Euros</option>
+        <option value='AUD'>Australian Dollars</option>
+        <option value='IDR'>Indonesian Rupies</option>
+        <option value='KRW'>South Korean Wons</option>
+        <option value='CAD'>Canadian Dollars</option>
+        <option value='NotReal'>Monopoly Money</option>
+      </select>
+      <button class='btn'>Submit</button>
+    </form>
+    <p id='output'></p>
+  </div>
+<script type="text/javascript" src="bundle.js"></script></body>

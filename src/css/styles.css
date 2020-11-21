@@ -1,0 +1,28 @@
+body {
+  background-color: floralwhite;
+}
+
+#exchange {
+  margin-top: 3%;
+}
+
+button {
+  margin-top: 3%;
+}
+
+label {
+  margin-top: 4%;
+  font-weight: bold;
+}
+
+#output {
+  margin-top: 10%;
+  font-weight: bold;
+}
+
+.btn { 
+  margin-top: 3%; 
+  font-weight: bold;
+  background-color: lightgrey;
+  border-color: black;
+}
