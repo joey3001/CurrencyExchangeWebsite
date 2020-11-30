@@ -6,18 +6,24 @@
 <body>
   <div class='container'>
     <form id='exchange'>
-      <label for='money'>Enter the amount of money you would like to convert: </label>
-      <input id='money' class='form-control' type='number' placeholder='$$$' step ='.01' required>
-      <label>Now, enter the currency to which you'd like to convert your money: </label>
-      <select class='form-control' id='alternateCurrency' required>
-        <option value=''>Currency Options</option>
-        <option value='EUR'>Euros</option>
-        <option value='AUD'>Australian Dollars</option>
-        <option value='IDR'>Indonesian Rupies</option>
-        <option value='KRW'>South Korean Wons</option>
-        <option value='CAD'>Canadian Dollars</option>
-        <option value='NotReal'>Monopoly Money</option>
-      </select>
+      <div class='row'>
+        <div class='col-5'>
+          <label for='money'>Enter the amount of USD you would like to convert:</label>
+          <input id='money' class='form-control' type='number' placeholder='$$$' step ='.01' required>
+        </div>
+        <div class='col-5'>
+          <label>Enter the currency to which you'd like to convert:</label>
+          <select class='form-control' id='alternateCurrency' required>
+            <option value=''>Currency Options</option>
+            <option value='EUR'>Euros</option>
+            <option value='AUD'>Australian Dollars</option>
+            <option value='IDR'>Indonesian Rupies</option>
+            <option value='KRW'>South Korean Wons</option>
+            <option value='CAD'>Canadian Dollars</option>
+            <option value='NotReal'>Monopoly Money</option>
+          </select>
+        </div>
+      </div>
       <button class='btn'>Submit</button>
     </form>
     <p id='output'></p>

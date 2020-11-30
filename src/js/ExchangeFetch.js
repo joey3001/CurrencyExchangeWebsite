@@ -1,10 +1,9 @@
-import $ from 'jquery'
+import $ from 'jquery';
 export default class ExchangeFetch {
 
   static async currencyCall() {
     try { 
       const response = await fetch (`https://v6.exchangerate-api.com/v6/${process.env.API_KEY}/latest/USD`);
-      console.log(response);
       if (!response.ok) {
         throw Error(response.statusText); 
       }
@@ -25,11 +24,12 @@ export default class ExchangeFetch {
       }
     }
     else if (typeof(response) === 'object') {
-      $('#output').text(`There was the following error: ${response['error-type']}`)
+      $('#output').text(`There was the following error: ${response['error-type']}`);
     }
     else {
-      $('#output').text(`There was the following error: ${response}`)
+      $('#output').text(`There was the following error: ${response}`);
     }
+    $('#output').fadeIn('slow');
   }
 
   static async makeApiCall(money, currency) {

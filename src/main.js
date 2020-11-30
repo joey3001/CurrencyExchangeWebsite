@@ -10,4 +10,4 @@ $('#exchange').submit(function() {
   let money = $('#money').val(); 
   let currency = $('#alternateCurrency').val();
   ExchangeFetch.makeApiCall(money, currency);
-}) 
+});
